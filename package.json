@@ -7,11 +7,15 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "clean": "cd android && ./gradlew clean",
+    "test": "jest",
+    "apk" :"cd android && ./gradlew assembleRelease"
   },
   "dependencies": {
+    "@supersami/rn-foreground-service": "2.1.0",
     "react": "18.2.0",
-    "react-native": "0.73.2"
+    "react-native": "0.73.2",
+    "react-native-geolocation-service": "^5.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
